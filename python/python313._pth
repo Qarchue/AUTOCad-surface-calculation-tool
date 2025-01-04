@@ -1,0 +1,10 @@
+python313.zip
+.
+Lib
+DLLs
+libs
+tcl\tcl8.6
+Scripts
+
+# Uncomment to run site.main() automatically
+import site
