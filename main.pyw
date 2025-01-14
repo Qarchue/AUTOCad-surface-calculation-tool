@@ -30,7 +30,7 @@ class CSVProcessorApp:
         # 數字選項 (小數點四捨五入)
         self.round_label = tk.Label(root, text="小數點四捨五入位數:")
         self.round_label.grid(row=1, column=0, padx=10, pady=5, sticky=tk.W)
-        self.round_var = tk.IntVar(value=6)
+        self.round_var = tk.IntVar(value=2)
         self.round_spinbox = tk.Spinbox(root, from_=0, to=10, textvariable=self.round_var, width=5)
         self.round_spinbox.grid(row=1, column=1, padx=10, pady=5, sticky=tk.W)
         
