@@ -11,7 +11,7 @@ class CSVProcessorApp:
     def __init__(self, root):
         self.root = root
         self.root.title("CSV 面積計算工具")
-        self.root.geometry("300x120")
+        self.root.geometry("320x120")
         self.root.rowconfigure(4, weight=1)
         self.root.columnconfigure(1, weight=1)
         
@@ -22,6 +22,7 @@ class CSVProcessorApp:
         self.file_path_entry.grid(row=0, column=1, padx=10, pady=5, sticky=tk.EW)
         self.browse_button = tk.Button(root, text="瀏覽", command=self.browse_file)
         self.browse_button.grid(row=0, column=2, padx=10, pady=5)
+        self.file_path_entry.insert(0, "將檔案拖曳至此")
 
         # 支持拖曳文件至檔案路徑輸入框
         self.file_path_entry.drop_target_register(DND_FILES)
